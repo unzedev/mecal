@@ -26,12 +26,15 @@ export default function BenefitsSection() {
   ];
 
   return (
-    <section className='py-16 bg-gray-50'>
+    <section className='py-16 bg-gradient-to-b from-red-50 to-white'>
       <div className='max-w-6xl mx-auto px-4'>
         <h2 className='text-3xl font-bold text-center mb-12'>Por que Escolher o Hidrojateamento?</h2>
         <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-6'>
           {benefits.map((benefit, index) => (
-            <Card key={index} className='p-6 text-center'>
+            <Card
+              key={index}
+              className='p-6 bg-white shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-200 text-center'
+            >
               <div className='flex justify-center mb-4'>{benefit.icon}</div>
               <h3 className='text-xl font-semibold mb-2'>{benefit.title}</h3>
               <p className='text-gray-600'>{benefit.description}</p>
