@@ -1,5 +1,16 @@
 import { Card } from '@/components/ui/Card';
-import { Droplets, Factory, Wrench } from 'lucide-react';
+import {
+  Droplets,
+  Filter,
+  Flame,
+  Heater,
+  RefreshCw,
+  SunSnow,
+  ThermometerSnowflake,
+  Waves,
+  Wind,
+  Wrench,
+} from 'lucide-react';
 
 export const services = [
   {
@@ -31,38 +42,47 @@ export const services = [
 export const equipments = [
   {
     name: 'Caldeiras',
+    icon: Flame,
     description: 'Remoção de incrustações e depósitos minerais com hidrojateamento de alta pressão.',
   },
   {
     name: 'Condensadores',
+    icon: RefreshCw,
     description: 'Limpeza profunda para restaurar a eficiência da troca térmica.',
   },
   {
     name: 'Evaporadores',
+    icon: Wind,
     description: 'Desincrustação e remoção de depósitos para melhor desempenho.',
   },
   {
     name: 'Fornalhas',
+    icon: Heater,
     description: 'Limpeza especializada para remoção de resíduos e incrustações.',
   },
   {
     name: 'Trocadores de Calor',
+    icon: SunSnow,
     description: 'Hidrojateamento para desobstrução e recuperação da eficiência.',
   },
   {
     name: 'Tubulações',
+    icon: Waves,
     description: 'Desobstrução e limpeza de tubulações industriais de todos os diâmetros.',
   },
   {
     name: 'Torres de Resfriamento',
+    icon: ThermometerSnowflake,
     description: 'Remoção de incrustações e biofilme com hidrojateamento.',
   },
   {
     name: 'Tanques',
+    icon: Droplets,
     description: 'Limpeza industrial de tanques e reservatórios com água pressurizada.',
   },
   {
     name: 'Filtros Industriais',
+    icon: Filter,
     description: 'Desobstrução e limpeza de elementos filtrantes.',
   },
 ];
@@ -105,7 +125,7 @@ export default function ServicesSection() {
               key={equipment.name}
               className='p-6 bg-white shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-200'
             >
-              <Factory className='w-8 h-8 text-red-600 mb-4' />
+              <equipment.icon className='w-8 h-8 text-red-600 mb-4' />
               <h4 className='text-lg font-medium text-gray-800'>{equipment.name}</h4>
               <p className='text-sm text-gray-600 mt-2'>{equipment.description}</p>
             </Card>
