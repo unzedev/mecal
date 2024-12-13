@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: 'Mecal',
     images: [
       {
-        url: 'https://www.mecal.com.br/images/hidrojateamento-industrial.jpg',
+        url: 'https://static.wixstatic.com/media/a0b220_f4d0c3c7306a4e1585b9ec19ecd083f7~mv2.jpeg/v1/fill/w_1046,h_596,al_c,q_85,enc_auto/1531980576_ea6948a86a13ebd6ce7d8c5c301c1c91_80590.jpeg',
         width: 1200,
         height: 630,
         alt: 'Hidrojateamento industrial em ação',
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
       'Desde 1996, a Mecal oferece hidrojateamento de alta pressão para soluções industriais seguras e eficientes.',
     images: [
       {
-        url: 'https://www.mecal.com.br/images/hidrojateamento-industrial.jpg',
+        url: 'https://static.wixstatic.com/media/a0b220_f4d0c3c7306a4e1585b9ec19ecd083f7~mv2.jpeg/v1/fill/w_1046,h_596,al_c,q_85,enc_auto/1531980576_ea6948a86a13ebd6ce7d8c5c301c1c91_80590.jpeg',
         alt: 'Hidrojateamento industrial em ação',
       },
     ],
